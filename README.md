@@ -1,39 +1,62 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# sliding_images
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+`SlidingImages` Flutter widget creates image sliders with customizable properties such as image dimensions, padding, auto-play, custom indicators, and more..
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+![demo](https://github.com/jyotsnayall/sliding_images-flutter-plugin/blob/main/demo.gif)
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+ - Image carousel with URL support.
+ - Customizable image dimensions and padding.
+ - Set the initial displayed image index.
+ - Auto-play with interval.
+ - Apply border to images.
+ - Navigation indicator.
+ - Animation curve customization.
+ - Scaling for active and non-active images.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add sliding_images as a dependency in your pubspec.yaml file.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Minimal example:
 
 ```dart
-const like = 'sample';
+SlidingImages(
+  imgUrls: ["https://p1.pxfuel.com/preview/321/155/730/alpine-bavaria-flowers-germany.jpg",
+            "https://p1.pxfuel.com/preview/818/670/574/dogs-chihuahua-rest-small-fur-cozy.jpg",
+            "https://p0.pxfuel.com/preview/961/674/322/podcast-coffee-chocolate-cup.jpg",
+            ],
+)
+
 ```
 
-## Additional information
+Custom settings:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+    SlidingImages(
+      imgUrls: ["https://p1.pxfuel.com/preview/321/155/730/alpine-bavaria-flowers-germany.jpg",
+                "https://p1.pxfuel.com/preview/818/670/574/dogs-chihuahua-rest-small-fur-cozy.jpg",
+                "https://p0.pxfuel.com/preview/961/674/322/podcast-coffee-chocolate-cup.jpg",
+                ],
+      imageWidth: 300,
+      imageHeight: 200,
+      padding: EdgeInsets.all(8.0),
+      border: Border.all(color: Colors.grey, width: 1.0),
+      autoPlayInterval: Duration(seconds: 3),
+      customIndicator: CustomIndicator(),
+      initialPage: 2,
+      enableAutoPlay: true,
+      infiniteScroll: true,
+      animationCurve: Curves.easeInOut,
+      activeSlideScale: 1.2,
+      nonActiveSlideScale: 0.9,
+    )
+```
+
+## See also
+
+ - [github repo](https://github.com/jyotsnayall/sliding_images-flutter-plugin)
+ - [pub.dev package](https://pub.dev/packages/sliding_images)
