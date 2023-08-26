@@ -1,5 +1,5 @@
 name: sliding_images
-description: A Flutter widget for creating image sliders with customizable properties such as image dimensions, padding, auto-play, custom indicators, and more..
+description: A Flutter widget for creating image sliders.
 version: 0.0.1
 homepage: https://github.com/jyotsnayall/sliding_images-flutter-plugin.git
 
