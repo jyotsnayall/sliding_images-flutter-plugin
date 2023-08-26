@@ -1,6 +1,6 @@
 name: sliding_images
 description: A Flutter widget for creating image sliders.
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/jyotsnayall/sliding_images-flutter-plugin.git
 
 environment:
