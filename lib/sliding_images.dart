@@ -49,7 +49,7 @@ class _SlidingImagesState extends State<SlidingImages> {
           return Container(
             width: widget.imageWidth ?? 300,
             height: widget.imageHeight ?? 300,
-            padding: widget.padding ?? EdgeInsets.all(2.0),
+            padding: widget.padding ?? const EdgeInsets.all(2.0),
             decoration: BoxDecoration(
               border: widget.border,
             ),

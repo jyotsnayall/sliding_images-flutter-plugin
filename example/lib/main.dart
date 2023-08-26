@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sliding_images/sliding_images_flutter_plugin.dart';
+import 'package:sliding_images/sliding_images.dart';
 
 void main() {
   runApp(const MyApp());
